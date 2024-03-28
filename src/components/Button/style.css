@@ -1,0 +1,85 @@
+/* 按钮基本样式 */
+.el-button {
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: var(--el-color-white);
+  text-align: center;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+/* primary- */
+.el-button.el-button--primary {
+  background-color: var(--el-color-primary);
+  &:hover {
+    color: var(--el-color-primary-hover);
+  }
+}
+
+/* success */
+.el-button.el-button--success {
+  background-color: var(--el-color-success);
+  &:hover {
+    color: var(--el-color-success-hover);
+  }
+}
+
+/* danger */
+.el-button.el-button--danger {
+  background-color: var(--el-color-danger);
+}
+/* warning */
+.el-button.el-button--warning {
+  background-color: var(--el-color-warning);
+}
+/* info */
+.el-button.el-button--info {
+  background-color: var(--el-color-info);
+}
+/* medium */
+.el-button.el-button--medium {
+  font-size: var(--el-font-size-medium);
+}
+/* small */
+.el-button.el-button--small {
+  font-size: var(--el-font-size-small);
+}
+/* mini */
+.el-button.el-button--mini {
+  font-size: var(--el-font-size-mini);
+}
+
+/* large */
+.el-button.el-button--large {
+  font-size: var(--el-font-size-large);
+}
+
+/* round */
+.el-button.is-round {
+  border-radius: var(--el-border-radius-round);
+}
+
+/* loading */
+.el-button.is-circle {
+  border-radius: var(--el-border-radius-circle);
+}
+
+/* disabled */
+.el-button.is-disabled {
+  color: var(--el-disabled-text-color);
+  background-color: var(--el-disabled-bg-color);
+  border-color: var(--el-disabled-border-color);
+}
+
+/* plain */

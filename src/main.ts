@@ -1,8 +1,8 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
+// 引入styles样式
+import './styles/index.css'
 import App from './App.vue'
 import router from './router'
 
