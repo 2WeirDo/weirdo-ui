@@ -7,6 +7,8 @@
     :autofocus="autofocus"
     :type="nativeType"
   >
+  <!-- 单独的disabled属性是为了便于禁用绑定到button上的事件，比如：点击事件 -->
+  <!-- class里的is-disabled是为了给按钮添加禁用的样式。 -->
     <slot></slot>
   </button>
 </template>
@@ -33,6 +35,7 @@ defineExpose({
 
 // 计算button的样式类
 const computedClass = computed(() => {
+  // 通过props属性，从父组件接收到
   const { type, size, round, loading, circle, disabled, plain } = props
   return [
     type ? 'el-button--' + type : '',

@@ -1,3 +1,4 @@
 @import './reset.css';
 @import './variable.css';
 @import '../components/Button/style.css';
+@import '../components/Container/style.css'
