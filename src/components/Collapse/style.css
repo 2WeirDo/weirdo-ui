@@ -1,0 +1,33 @@
+.el-collapse-item {
+  box-sizing: border-box;
+}
+.el-collapse-item-title {
+  /* background-color: blue; */
+  position: relative;
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid var(--el-border-color);
+  box-sizing: border-box;
+  .header-angle {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+  }
+  &.is-active {
+    .header-angle {
+      transform: rotate(90deg);
+    }
+  }
+  .header-angle {
+    transition: transform 0.3s;
+  }
+}
+
+.el-collapse-item-content {
+  /* padding-bottom: 25px; */
+  font-size: 13px;
+  color: #303133;
+  line-height: 26px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--el-border-color);
+}

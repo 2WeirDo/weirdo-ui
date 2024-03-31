@@ -32,6 +32,7 @@ const isVertical = computed(() => {
     return vNodes.some((vNode) => {
       // 将 vNode.type 断言为 Component 类型，然后获取组件类型属性 name
       const tag = (vNode.type as Component).name
+      //  这种方法也可以 const tag = vNode.componentOptions && vNode.componentOptions.tag;
       return tag === 'ElHeader' || tag === 'ElFooter'
     })
   } else {
