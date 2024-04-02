@@ -2,6 +2,8 @@
 // import { RouterView } from 'vue-router'
 import ElButton from './components/Button/Button.vue'
 import ElIcon from './components/Icon/Icon.vue'
+import ElButtonGroup from './components/ButtonGroup/ButtonGroup.vue'
+import ElLink from './components/Link/Link.vue'
 // import ElContainer from './components/Container/Container.vue'
 // import ElAside from './components/Container/Aside.vue'
 // import ElHeader from './components/Container/Header.vue'
@@ -47,6 +49,13 @@ import ElIcon from './components/Icon/Icon.vue'
     <el-icon icon="arrow-right" color="blue" shake></el-icon>
     <el-icon icon="star" size="2xs"></el-icon>
     <el-icon icon="image" beat></el-icon>
+    <el-link type="danger" disabled>info</el-link>
+    <el-link type="success" underline>info</el-link>
+    <el-link type="danger" underline>info</el-link>
+    <el-button-group>
+      <el-button type="primary" icon="arrow-right">Previous Page</el-button>
+      <el-button type="danger">aaa</el-button>
+    </el-button-group>
   </div>
 </template>
 
