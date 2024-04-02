@@ -25,10 +25,13 @@ defineOptions({
 const props = defineProps<CollapseItemProps>()
 // Inject的数据
 const collapseContext = inject(collapseContextKey)
+// 使用计算属性判断当前项是否处于展开状态
 const isActive = computed(() => {
   return collapseContext?.activeNames.value.includes(props.name)
 })
+// 处理点击事件，展开或折叠当前项的内容
 const handleClick = () => {
+  // 如果 disabled 属性为 true，则不执行展开操作
   if (props.disabled) return
   collapseContext?.handleItemClick(props.name)
 }

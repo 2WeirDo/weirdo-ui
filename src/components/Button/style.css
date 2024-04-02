@@ -83,3 +83,9 @@
 }
 
 /* plain */
+
+/* icon */
+/* 选择类名中包括el-icon的元素后面紧跟的所有span元素 */
+[class*='el-icon'] + span {
+  margin-left: 5px;
+}
