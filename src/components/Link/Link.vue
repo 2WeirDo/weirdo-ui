@@ -15,7 +15,7 @@
 </template>
 <script setup lang="ts">
 import { computed } from 'vue'
-import { LinkProps, linkEmits } from './types'
+import { type LinkProps, linkEmits } from './types'
 import ElIcon from '../Icon/Icon.vue'
 defineOptions({
   name: 'ElLink'

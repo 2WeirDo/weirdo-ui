@@ -4,6 +4,8 @@ import ElButton from './components/Button/Button.vue'
 import ElIcon from './components/Icon/Icon.vue'
 import ElButtonGroup from './components/ButtonGroup/ButtonGroup.vue'
 import ElLink from './components/Link/Link.vue'
+import ElDatePicker from './components/DatePicker/DatePicker.vue'
+import ElTooltip from './components/Tooltip/Tooltip.vue'
 // import ElContainer from './components/Container/Container.vue'
 // import ElAside from './components/Container/Aside.vue'
 // import ElHeader from './components/Container/Header.vue'
@@ -51,7 +53,7 @@ import ElLink from './components/Link/Link.vue'
     <el-icon icon="image" beat></el-icon>
     <el-link type="danger" disabled>info</el-link>
     <el-link type="success" underline>info</el-link>
-    <el-link type="danger" underline>info</el-link>
+    <el-link type="danger" underline><el-icon icon="heart"></el-icon></el-link>
     <el-button-group>
       <el-button type="primary" icon="arrow-right">Previous Page</el-button>
       <el-button type="danger">aaa</el-button>
