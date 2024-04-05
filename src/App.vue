@@ -8,6 +8,7 @@ import ElDatePicker from './components/DatePicker/DatePicker.vue'
 import ElTooltip from './components/Tooltip/Tooltip.vue'
 import ElDropdown from './components/Dropdown/Dropdown.vue'
 import ElRate from './components/Rate/Rate.vue'
+import ElSwitch from './components/Switch/Switch.vue'
 // import ElContainer from './components/Container/Container.vue'
 // import ElAside from './components/Container/Aside.vue'
 // import ElHeader from './components/Container/Header.vue'
@@ -61,6 +62,7 @@ import ElRate from './components/Rate/Rate.vue'
       <el-button type="danger">aaa</el-button>
     </el-button-group>
     <el-rate></el-rate>
+    <el-switch></el-switch>
   </div>
 </template>
 
