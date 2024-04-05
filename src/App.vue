@@ -7,6 +7,7 @@ import ElLink from './components/Link/Link.vue'
 import ElDatePicker from './components/DatePicker/DatePicker.vue'
 import ElTooltip from './components/Tooltip/Tooltip.vue'
 import ElDropdown from './components/Dropdown/Dropdown.vue'
+import ElRate from './components/Rate/Rate.vue'
 // import ElContainer from './components/Container/Container.vue'
 // import ElAside from './components/Container/Aside.vue'
 // import ElHeader from './components/Container/Header.vue'
@@ -59,6 +60,7 @@ import ElDropdown from './components/Dropdown/Dropdown.vue'
       <el-button type="primary" icon="arrow-right">Previous Page</el-button>
       <el-button type="danger">aaa</el-button>
     </el-button-group>
+    <el-rate></el-rate>
   </div>
 </template>
 

@@ -7,4 +7,6 @@
 @import '../components/Link/style.css';
 @import '../components/ButtonGroup/style.css';
 @import '../components/DatePicker/style.css';
-@import '../components/Tooltip/style.css'
+@import '../components/Tooltip/style.css';
+@import '../components/Rate/style.css';
+@import '../components/Message/style.css';
