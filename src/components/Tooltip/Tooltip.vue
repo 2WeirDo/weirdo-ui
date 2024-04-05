@@ -7,6 +7,14 @@
       <slot />
     </div>
     <!-- Tooltip 弹出框的过渡效果 -->
+    <!-- 
+      <Transition> 是一个内置组件，这意味着它在任意别的组件中都可以被使用，无需注册。
+        它可以将进入和离开动画应用到通过默认插槽传递给它的元素或组件上。进入或离开可以由以下的条件之一触发：
+          由 v-if 所触发的切换
+          由 v-show 所触发的切换
+          由特殊元素 <component> 切换的动态组件
+          改变特殊的 key 属性
+     -->
     <Transition :name="transition">
       <!-- Tooltip 弹出框 -->
       <!-- v-on="obj"  用于绑定一系列事件名和对应的事件处理函数-->
@@ -157,7 +165,7 @@ if (!props.manual) {
 
 // 监听手动控制属性的变化，动态绑定或取消事件
 watch(
-  () => props.manual,  // manual : 手动
+  () => props.manual, // manual : 手动
   (isManual) => {
     // isManual代表了props.manual的当前值。
     if (isManual) {
