@@ -1,14 +1,28 @@
 <script setup lang="ts">
 // import { RouterView } from 'vue-router'
+import { reactive } from 'vue'
 import ElButton from './components/Button/Button.vue'
 import ElIcon from './components/Icon/Icon.vue'
 import ElButtonGroup from './components/ButtonGroup/ButtonGroup.vue'
 import ElLink from './components/Link/Link.vue'
-import ElDatePicker from './components/DatePicker/DatePicker.vue'
-import ElTooltip from './components/Tooltip/Tooltip.vue'
-import ElDropdown from './components/Dropdown/Dropdown.vue'
+// import ElDatePicker from './components/DatePicker/DatePicker.vue'
+// import ElTooltip from './components/Tooltip/Tooltip.vue'
+// import ElDropdown from './components/Dropdown/Dropdown.vue'
 import ElRate from './components/Rate/Rate.vue'
 import ElSwitch from './components/Switch/Switch.vue'
+import ElInput from './components/Input/Input.vue'
+import ElForm from './components/Form/Form.vue'
+import ElFormItem from './components/Form/FormItem.vue'
+const form = reactive({
+  name: '',
+  region: '',
+  date1: '',
+  date2: '',
+  delivery: false,
+  type: [],
+  resource: '',
+  desc: ''
+})
 // import ElContainer from './components/Container/Container.vue'
 // import ElAside from './components/Container/Aside.vue'
 // import ElHeader from './components/Container/Header.vue'
@@ -63,6 +77,19 @@ import ElSwitch from './components/Switch/Switch.vue'
     </el-button-group>
     <el-rate></el-rate>
     <el-switch></el-switch>
+    <el-input showClear label="dad">
+      <template #prepend>
+        <p>hhh</p>
+      </template>
+      <template #prefix>
+        <el-icon icon="star"></el-icon>
+      </template>
+    </el-input>
+    <el-form :model="form" label-width="auto" style="max-width: 600px">
+      <el-form-item label="Activity name">
+        <el-input v-model="form.name" />
+      </el-form-item>
+    </el-form>
   </div>
 </template>
 
