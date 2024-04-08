@@ -64,7 +64,7 @@ const innerValue = computed(() => {
   const model = formContext?.model  // 获取到表单数据对象
   // isNil : 检查 value 是否是 null 或者 undefined。
   if (model && props.prop && !isNil(model[props.prop])) {
-    return model[props.prop]  // 返回这个表单项对象(通过键名拿到)
+    return model[props.prop]  // 返回这个表单项的值(通过键名拿到)
   } else {
     return null
   }
@@ -109,18 +109,18 @@ const getTriggeredRules = (trigger?: string) => {
 // 验证字段的函数
 // 验证表单项的值是否符合规则。
 const validate = async (trigger?: string) => {
-  const modelName = props.prop
-  const triggeredRules = getTriggeredRules(trigger)
+  const modelName = props.prop  // 获取当前表单项的属性名称
+  const triggeredRules = getTriggeredRules(trigger) // 获取根据指定触发时机 trigger 获取的验证规则数组
   if (triggeredRules.length === 0) {
-    return true
+    return true  // 没有符合触发时机的验证规则, 表示验证通过。
   }
-  if (modelName) {
-    const validator = new AsyncValidator({
-      [modelName]: triggeredRules
-    })
+  if (modelName) {  // 如果存在需要验证的属性名称 modelName
+    const validator = new AsyncValidator({  // 这个实例用于对当前表单项的值进行验证。
+      [modelName]: triggeredRules     
+    })   
     validateStatus.loading = true
     return validator
-      .validate({ [modelName]: innerValue.value }) // modelName: 表单项键名, innerValue : 表单对象
+      .validate({ [modelName]: innerValue.value }) // modelName: 表单项键名, innerValue : 表单项的值
       .then(() => {
         validateStatus.state = 'success'
       })
