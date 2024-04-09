@@ -1,28 +1,28 @@
 <script setup lang="ts">
-// import { RouterView } from 'vue-router'
-import { reactive } from 'vue'
-import ElButton from './components/Button/Button.vue'
-import ElIcon from './components/Icon/Icon.vue'
-import ElButtonGroup from './components/ButtonGroup/ButtonGroup.vue'
-import ElLink from './components/Link/Link.vue'
+import { RouterView } from 'vue-router'
+// import { reactive } from 'vue'
+// import ElButton from './components/Button/Button.vue'
+// import ElIcon from './components/Icon/Icon.vue'
+// import ElButtonGroup from './components/ButtonGroup/ButtonGroup.vue'
+// import ElLink from './components/Link/Link.vue'
 // import ElDatePicker from './components/DatePicker/DatePicker.vue'
 // import ElTooltip from './components/Tooltip/Tooltip.vue'
 // import ElDropdown from './components/Dropdown/Dropdown.vue'
-import ElRate from './components/Rate/Rate.vue'
-import ElSwitch from './components/Switch/Switch.vue'
-import ElInput from './components/Input/Input.vue'
-import ElForm from './components/Form/Form.vue'
-import ElFormItem from './components/Form/FormItem.vue'
-const form = reactive({
-  name: '',
-  region: '',
-  date1: '',
-  date2: '',
-  delivery: false,
-  type: [],
-  resource: '',
-  desc: ''
-})
+// import ElRate from './components/Rate/Rate.vue'
+// import ElSwitch from './components/Switch/Switch.vue'
+// import ElInput from './components/Input/Input.vue'
+// import ElForm from './components/Form/Form.vue'
+// import ElFormItem from './components/Form/FormItem.vue'
+// const form = reactive({
+//   name: '',
+//   region: '',
+//   date1: '',
+//   date2: '',
+//   delivery: false,
+//   type: [],
+//   resource: '',
+//   desc: ''
+// })
 // import ElContainer from './components/Container/Container.vue'
 // import ElAside from './components/Container/Aside.vue'
 // import ElHeader from './components/Container/Header.vue'
@@ -33,10 +33,10 @@ const form = reactive({
 </script>
 
 <template>
-  <!-- <RouterView /> -->
+  <RouterView />
 
-  <div>
-    <!-- <el-container>
+  <!-- <div> -->
+  <!-- <el-container>
       <el-header></el-header>
       <el-container>
         <el-aside :width="1000"></el-aside>
@@ -49,7 +49,7 @@ const form = reactive({
     <el-button type="info">按钮</el-button>
     <el-button type="warning">按钮</el-button>
     <el-button type="success">按钮</el-button> -->
-    <!-- <el-collapse :model-value="['nihao']">
+  <!-- <el-collapse :model-value="['nihao']">
       <el-collapse-item title="Feedback" name="2">
         <div>
           Operation feedback: enable the users to clearly perceive their operations by style updates
@@ -61,10 +61,10 @@ const form = reactive({
       </el-collapse-item>
     </el-collapse> -->
 
-    <!-- 传入了loading -->
-    <el-button loading>按钮1</el-button>
-    <!-- 传入了icon属性 -->
-    <el-button icon="arrow-right">按钮1</el-button>
+  <!-- 传入了loading -->
+  <!-- <el-button loading>按钮1</el-button> -->
+  <!-- 传入了icon属性 -->
+  <!-- <el-button icon="arrow-right">按钮1</el-button>
     <el-icon icon="arrow-right" color="blue" shake></el-icon>
     <el-icon icon="star" size="2xs"></el-icon>
     <el-icon icon="image" beat></el-icon>
@@ -90,7 +90,7 @@ const form = reactive({
         <el-input v-model="form.name" />
       </el-form-item>
     </el-form>
-  </div>
+  </div> -->
 </template>
 
 <style scoped></style>
