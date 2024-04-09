@@ -13,7 +13,7 @@
   <!-- 离开动画结束后执行销毁组件方法 -->
   <!-- 进入动画开始时执行更新高度方法 -->
   <!-- 内置组件 <Transition> 会在一个元素或组件进入和离开 DOM 时应用动画 -->
-    <!-- https://cn.vuejs.org/api/built-in-components.html#transition 查看API -->
+  <!-- https://cn.vuejs.org/api/built-in-components.html#transition 查看API -->
   <Transition name="fade-up" @after-leave="destroyComponent" @enter="updateHeight">
     <!-- 根据 visible 控制消息是否显示 -->
     <!-- 鼠标移入时清除定时器，鼠标移出时启动定时器 -->
@@ -47,6 +47,7 @@
 </template>
 
 <script setup lang="ts">
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { ref, onMounted, watch, computed, nextTick } from 'vue'
 import type { MessageProps } from './types'
 import RenderVnode from '../Common/RenderVnode'
