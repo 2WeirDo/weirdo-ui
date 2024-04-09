@@ -12,6 +12,7 @@
   >
     <div class="el-form-item__label">
       <slot name="label" :label="label">
+        <!--  表单项的标签文本 -->
         {{ label }}
       </slot>
     </div>
@@ -73,7 +74,7 @@ const innerValue = computed(() => {
 // 表单项对象初始值
 let initialValue: any = undefined
 
-// 获取表单项规则的计算属性
+// 获取表单项规则
 const getItemRules = computed(() => {
   const rules = formContext?.rules
   if (rules && props.prop && rules[props.prop]) {
@@ -120,7 +121,7 @@ const validate = async (trigger?: string) => {
     })   
     validateStatus.loading = true
     return validator
-      .validate({ [modelName]: innerValue.value }) // modelName: 表单项键名, innerValue : 表单项的值
+      .validate({ [modelName]: innerValue.value }) // modelName: 表单项名称, innerValue : 表单项的值
       .then(() => {
         validateStatus.state = 'success'
       })

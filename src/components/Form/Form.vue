@@ -9,7 +9,9 @@
 <script setup lang="ts">
 // 导入必要的模块
 import { provide } from 'vue'
-import type { ValidateFieldsError } from 'async-validator'
+
+// async-validator 是一个用于异步验证的库，通常用于处理表单的校验。
+import type { ValidateFieldsError } from 'async-validator' 
 import { formProps, formContextKey } from './types'
 import type { FormItemContext, FormContext, FormValidateFailure } from './types'
 

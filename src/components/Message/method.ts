@@ -13,6 +13,9 @@ let seed = 1
 const instances: MessageContext[] = shallowReactive([])
 
 // 创建消息函数
+/**
+ * 当调用createMessage函数时，会生成一个唯一的消息id，创建一个消息容器，并将消息组件渲染到该容器中。
+ */
 export const createMessage = (props: CreateMessageProps) => {
   // 获取下一个可用的 z-index
   const { nextZIndex } = useZIndex()
@@ -48,13 +51,12 @@ export const createMessage = (props: CreateMessageProps) => {
   const newProps = {
     ...props,
     id,
-    zIndex: nextZIndex(), // 设置 z-index
+    zIndex: nextZIndex(), // 设置 z-index, 每个消息组件都有一个独立的z-index，确保它们在页面上正确地叠加显示。
     onDestory: destory // 设置销毁函数
   }
 
   // 通过 h 函数 创建消息vNode
   // h函数用于创建虚拟DOM元素（VNode), 接受三个参数：要创建的元素标签名、元素的属性对象（如类名、样式、事件等）、子元素（可以是文本内容或其他 VNode）。
-
   const vnode = h(MessageConstructor, newProps)
 
   // 渲染消息 vnode 到容器中

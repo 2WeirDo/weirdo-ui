@@ -28,13 +28,13 @@ export const formProps = {
 }
 // 表单项组件的 props
 export const formItemProps = {
-  label: {
+  label: {  // 表单项的标签文本
     type: String
   },
-  prop: {
+  prop: {  // 表单项对应的数据字段
     type: String
   },
-  showMessage: {
+  showMessage: { // 是否显示验证错误信息
     type: Boolean,
     default: true
   }
