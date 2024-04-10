@@ -17,3 +17,7 @@ git commit -m 'deploy'
 git push -f git@github.com:2WeirDo/weirdo-ui.git master:main
 
 cd -
+
+git add .
+git cm 'update'
+git push origin master:main
