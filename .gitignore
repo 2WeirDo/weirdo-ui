@@ -10,6 +10,8 @@ lerna-debug.log*
 node_modules
 .DS_Store
 dist
+docs/.vitepress/dist
+docs/.vitepress/cache
 dist-ssr
 coverage
 *.local
