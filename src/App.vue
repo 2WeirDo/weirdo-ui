@@ -33,10 +33,11 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <RouterView />
+  <div>
+    <RouterView />
 
-  <!-- <div> -->
-  <!-- <el-container>
+    <!-- <div> -->
+    <!-- <el-container>
       <el-header></el-header>
       <el-container>
         <el-aside :width="1000"></el-aside>
@@ -49,7 +50,7 @@ import { RouterView } from 'vue-router'
     <el-button type="info">按钮</el-button>
     <el-button type="warning">按钮</el-button>
     <el-button type="success">按钮</el-button> -->
-  <!-- <el-collapse :model-value="['nihao']">
+    <!-- <el-collapse :model-value="['nihao']">
       <el-collapse-item title="Feedback" name="2">
         <div>
           Operation feedback: enable the users to clearly perceive their operations by style updates
@@ -61,10 +62,10 @@ import { RouterView } from 'vue-router'
       </el-collapse-item>
     </el-collapse> -->
 
-  <!-- 传入了loading -->
-  <!-- <el-button loading>按钮1</el-button> -->
-  <!-- 传入了icon属性 -->
-  <!-- <el-button icon="arrow-right">按钮1</el-button>
+    <!-- 传入了loading -->
+    <!-- <el-button loading>按钮1</el-button> -->
+    <!-- 传入了icon属性 -->
+    <!-- <el-button icon="arrow-right">按钮1</el-button>
     <el-icon icon="arrow-right" color="blue" shake></el-icon>
     <el-icon icon="star" size="2xs"></el-icon>
     <el-icon icon="image" beat></el-icon>
@@ -91,6 +92,7 @@ import { RouterView } from 'vue-router'
       </el-form-item>
     </el-form>
   </div> -->
+  </div>
 </template>
 
 <style scoped></style>
