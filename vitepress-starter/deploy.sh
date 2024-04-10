@@ -20,4 +20,4 @@ cd -
 
 git add .
 git cm 'update'
-git push origin master:main
+git push origin master:code
