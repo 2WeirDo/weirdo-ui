@@ -21,6 +21,19 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        text: '引入',
+        items: [
+          {
+            text: '介绍',
+            link: '/guild/index'
+          },
+          {
+            text: '快速开始',
+            link: '/guild/quickstart'
+          }
+        ]
+      },
+      {
         text: '基础',
         items: [
           { text: '按钮 Button', link: '/components/button' },
@@ -61,7 +74,7 @@ export default defineConfig({
         ariaLabel: 'Blog'
       }
     ],
-    logo: '/logo.png',
+    logo: '/logo.png'
   },
   markdown: {
     // @vitepress-demo-preview的配置

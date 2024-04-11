@@ -1,39 +1,29 @@
 # weirdo-ui
 
-This template should help get you started developing with Vue 3 in Vite.
+仿 Element-Plus 组件库开发框架
 
-## Recommended IDE Setup
+**weirdo-ui**是一个 仿照 `Element-Plus` 实现的一个简易版的**Vue3**组件库, 技术栈为 `Vue3、TypeScript、Vite、Vitest、VitePress、Rollup、Postcss`。
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 下载项目
 
-## Type Support for `.vue` Imports in TS
+```sh
+git clone https://github.com/2WeirDo/weirdo-ui.git
+``` 
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## 快速启动
 
 ```sh
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+## 启动项目
 
 ```sh
 pnpm dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## 启动 vitepress 文档
 
 ```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
+pnpm pnpm docs:dev
 ```
