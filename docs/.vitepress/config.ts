@@ -60,7 +60,8 @@ export default defineConfig({
         link: 'https://2weirdo.github.io/',
         ariaLabel: 'Blog'
       }
-    ]
+    ],
+    logo: '/logo.png',
   },
   markdown: {
     // @vitepress-demo-preview的配置
