@@ -5,10 +5,11 @@ const open = (type) => {
   createMessage({ 
     message: 'message消息提示',
     showClose: true,
-    duration: 0
+    duration: 0,
+    type,
   })
 }
 </script>
 <template>
-  <el-button @click="open('info')" type="info"> Info </el-button>
+  <el-button @click="open('warning')"> Info </el-button>
 </template>

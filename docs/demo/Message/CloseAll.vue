@@ -28,6 +28,6 @@ const closeAllMessage = () => {
 }
 </script>
 <template>
-  <el-button @click="open('info')" type="info"> 创建多条消息 </el-button>
-  <el-button @click="closeAllMessage">关闭所有消息</el-button>
+  <el-button @click="open('info')" type="info" > 创建多条消息 </el-button>
+  <el-button @click="closeAllMessage" style="margin-left: 50px;">关闭所有消息</el-button>
 </template>

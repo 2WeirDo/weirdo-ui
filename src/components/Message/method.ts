@@ -52,7 +52,7 @@ export const createMessage = (props: CreateMessageProps) => {
     ...props,
     id,
     zIndex: nextZIndex(), // 设置 z-index, 每个消息组件都有一个独立的z-index，确保它们在页面上正确地叠加显示。
-    onDestory: destory // 设置销毁函数
+    onClose: destory // 设置销毁函数
   }
 
   // 通过 h 函数 创建消息vNode
@@ -86,7 +86,6 @@ export const createMessage = (props: CreateMessageProps) => {
 
 // 获取最后一个消息实例
 export const getLastInstance = () => {
-  // weirdo
   return instances[instances.length - 1]
 }
 
@@ -106,4 +105,5 @@ export const closeAll = () => {
   instances.forEach((instance) => {
     instance.destory()
   })
+  instances.length = 0
 }

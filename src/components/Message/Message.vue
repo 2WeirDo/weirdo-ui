@@ -68,6 +68,7 @@ const messageRef = ref<HTMLDivElement>() // 消息组件的引用
 
 // 计算属性
 const height = ref(0) // 消息组件高度
+// id 是通过 createMessage 创建消息组件的时候传入的
 const lastOffset = computed(() => getLastBottomOffset(props.id)) // 上一个实例的最下面的坐标数字
 const topOffset = computed(() => props.offset + lastOffset.value) // 元素的 top 偏移量
 const bottomOffset = computed(() => height.value + topOffset.value) // 元素的 bottom 偏移量，为下一个消息组件提供
