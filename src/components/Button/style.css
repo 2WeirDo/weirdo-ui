@@ -38,14 +38,23 @@
 /* danger */
 .el-button.el-button--danger {
   background-color: var(--el-color-danger);
+  &:hover {
+    color: var(--el-color-danger-hover);
+  }
 }
 /* warning */
 .el-button.el-button--warning {
   background-color: var(--el-color-warning);
+  &:hover {
+    color: var(--el-color-warning-hover);
+  }
 }
 /* info */
 .el-button.el-button--info {
   background-color: var(--el-color-info);
+  &:hover {
+    color: var(--el-color-info-hover);
+  }
 }
 /* medium */
 .el-button.el-button--medium {

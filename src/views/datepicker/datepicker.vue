@@ -7,6 +7,9 @@
 
 <script>
 import DatePicker from '@/components/DatePicker/DatePicker.vue'
+defineOptions({
+  name: 'DialogView'
+})
 export default {
   name: 'DatePickerView',
   data() {

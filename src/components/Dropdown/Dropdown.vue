@@ -1,5 +1,5 @@
 <template>
-  <!-- DropDown的模板结构以Tooltop作为基础，菜单选项作为插槽传入，遍历菜单项，
+  <!-- DropDown的模板结构以Tooltip作为基础，菜单选项作为插槽传入，遍历菜单项，
     如果传入的菜单项为divided情况下，生成分隔线，然后渲染item.label，即菜单项。 -->
 
   <div class="el-dropdown">

@@ -3,7 +3,7 @@
     content="Content"
     trigger="hover"
   >
-    <ElButton> Hover状态下 显示 Tooltip显示 </ElButton>
+    <ElButton> Hover 状态下 Tooltip 显示 </ElButton>
   </ElTooltip>
 </template>
 <script setup>

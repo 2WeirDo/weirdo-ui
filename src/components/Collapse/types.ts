@@ -17,9 +17,9 @@ export interface CollapseContext {
 }
 
 /*
-InjectionKey 是 Vue 3 中用于创建注入键的类型，它接受一个泛型参数，用于指定注入的值的类型。
-CollapseContext 表示折叠面板组件上下文信息的接口或类型。
-Symbol('collapseContextKey') 创建了一个具有描述字符串 'collapseContextKey' 的唯一符号，用作注入键的标识符。
+  InjectionKey 是 Vue 3 中用于创建注入键的类型，它接受一个泛型参数，用于指定注入的值的类型。
+  CollapseContext 表示折叠面板组件上下文信息的接口或类型。
+  Symbol('collapseContextKey') 创建了一个具有描述字符串 'collapseContextKey' 的唯一符号，用作注入键的标识符。
 */
 export const collapseContextKey: InjectionKey<CollapseContext> = Symbol('collapseContextKey')
 

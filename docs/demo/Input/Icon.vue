@@ -5,11 +5,11 @@
         <el-icon icon="calendar"></el-icon>
       </template>
     </el-input>
-    <el-input>
+    <!-- <el-input>
       <template #prefix>
-        <el-icon icon="magnifying-glass"></el-icon>
+        <el-icon icon=""></el-icon>
       </template>
-    </el-input>
+    </el-input> -->
   </div>
 </template>
 <script setup lang="ts">

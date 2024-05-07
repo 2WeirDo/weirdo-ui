@@ -8,8 +8,8 @@ const openedValue = ref(['a'])
 <div class="basic block">
   <Collapse v-model="openedValue">
     <Item name="a" title="Title A">
-      <h1>headline title</h1>
-      <div> this is content a aaa </div>
+      <span>headline title</span>
+      <h5> this is content a aaa </h5>
     </Item>
     <Item name="b" title="Title B">
       <div> this is bbbbb test </div>

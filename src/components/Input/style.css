@@ -52,12 +52,12 @@
   padding-left: 18px;
 }
 .el-input--large .el-input-content {
-  height: 44px;
+  height: 52px;
   padding: 20px;
 }
 .el-input--small .el-input-content {
-  height: 28px;
-  padding: 12px;
+  height: 20px;
+  padding: 18px;
 }
 .el-input-content:disabled {
   background-color: #f0f0f0;

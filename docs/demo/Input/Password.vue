@@ -1,6 +1,6 @@
 <template lang="">
   <div>
-    <el-input showPassword></el-input>
+    <el-input showPassword modelValue="nb"></el-input>
   </div>
 </template>
 <script setup lang="ts">

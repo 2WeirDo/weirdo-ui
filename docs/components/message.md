@@ -3,7 +3,6 @@ title: Message
 description: Message组件文档
 ---
 
-
 # Message组件
 
 与Alert组件类似，Message组件也用于向用户提供关键的信息，但通常它是以非阻塞的方式显示，显示临时性的通知，比如操作成功，操作失败，通常会在屏幕的某个角落或顶部浮动，不会打断用户的操作。

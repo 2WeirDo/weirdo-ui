@@ -5,7 +5,7 @@
     <div class="el-alert" :class="elAlertClass" v-show="visible">
       <div class="el-alert__content">
         <!-- 是否显示图标 -->
-        <span v-if="showIcon">
+        <span v-if="showIcon" style="margin-right: 6px;">
           <!-- 图标组件 -->
           <el-icon :icon="showAlertIcon()" @click.stop="visible = false"></el-icon>
         </span>
@@ -30,7 +30,7 @@
           {{ closeText }}
         </div>
         <!-- 使用默认的关闭图标 -->
-        <el-icon v-else icon="xmark" @click="closeAlert" class="closeBtn"></el-icon>
+        <el-icon v-else icon="xmark" @click="closeAlert" style="margin-right: -6px;" class="closeBtn"></el-icon>
       </template>
     </div>
   </Transition>

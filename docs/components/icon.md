@@ -3,7 +3,6 @@ title: Icon
 description: Icon组件文档
 ---
 
-
 # Icon图标
 
 对`fontawesome`图标库进行封装，涵盖了各种常见的图标需求。

@@ -1,4 +1,3 @@
-\
 <template>
   <div class="calendar">
     <div class="calendar-operate">
@@ -87,7 +86,8 @@ const changeMonth = (type: 'prev' | 'next'): void => {
     year = month === 0 ? date.value.getFullYear() + 1 : date.value.getFullYear()
   }
 
-  if (month === new Date().getMonth()) {  // 相当于回到当前月份, 就不用设置后面了
+  if (month === new Date().getMonth()) {
+    // 相当于回到当前月份, 就不用设置后面了
     currentDate()
     return
   }
@@ -123,6 +123,7 @@ const changeMonth = (type: 'prev' | 'next'): void => {
 }
 
 .button-group {
+  color: black;
   .button:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;

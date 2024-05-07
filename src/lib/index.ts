@@ -1,7 +1,6 @@
 export { default as Alert } from '../components/Alert/Alert.vue'
 // 上面是import Switch from './Switch.vue';export {Switch}的简写
 export { default as Button } from '../components/Button/Button.vue'
-export { default as ButtonGroup } from '../components/ButtonGroup/ButtonGroup.vue'
 export { default as Collapse } from '../components/Collapse/Collapse.vue'
 export { default as Common } from '../components/Alert/Alert.vue'
 

@@ -8,6 +8,6 @@
 <script setup>
 import DatePicker from '@/components/DatePicker/DatePicker.vue'
 import { ref } from 'vue'
-const selectDate = ref("")
+const selectedDate = ref("")
 
 </script>

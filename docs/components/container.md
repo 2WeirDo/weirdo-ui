@@ -3,7 +3,6 @@ title: Container
 description: Container组件文档
 ---
 
-
 # Container布局容器
 
 用于布局的容器组件，方便快速搭建页面的基本结构：
@@ -18,10 +17,7 @@ description: Container组件文档
 
 `<el-footer>`：底栏容器。
 
-
-
 ## 常见页面布局
-
 
 <preview path="../demo/Container/Demo1.vue"></preview>
 <preview path="../demo/Container/Demo2.vue" ></preview>

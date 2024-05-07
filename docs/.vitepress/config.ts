@@ -61,7 +61,7 @@ export default defineConfig({
           { text: '输入框 Input', link: 'components/input' },
           { text: '选择框 Select', link: 'components/select' },
           { text: '表单 Form', link: '/components/form' },
-          { text: '日期选择器 DatePicker', link: 'components/datepicker' }
+          // { text: '日期选择器 DatePicker', link: 'components/datepicker' }
         ]
       }
     ],

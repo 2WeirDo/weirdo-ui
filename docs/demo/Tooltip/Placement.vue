@@ -82,7 +82,7 @@
     </div>
     <div class="row center">
       <el-tooltip
-        class="box-item"
+        class="box-item dd"
         effect="dark"
         content="Bottom Left prompts info"
         placement="bottom-start"
@@ -127,5 +127,8 @@ import ElButton from '@/components/Button/Button.vue'
 .tooltip-base-box .box-item {
   width: 110px;
   margin-top: 10px;
+}
+.dd {
+  transform: translate(-27px);
 }
 </style>
